@@ -1,3 +1,5 @@
+![Build](https://travis-ci.org/Geekz45679/fut.js.svg?branch=master)
+
 # Fut.js
 ### A Simple but powerful module to access the FIFA Ultimate Team player database.
 
