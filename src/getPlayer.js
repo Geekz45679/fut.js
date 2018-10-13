@@ -6,7 +6,7 @@ const cleanData = require('./cleanData.js');
 /**
  * @param {string} name
  * @param {boolean} clean - Optional, chooses whether to clean the data into a more organized format, or to get the raw JSON data.
- * @returns {Promise<Map<'Player', 'Data'>>}
+ * @returns {Array}
  * @async
  */
 module.exports = async (name, clean = true) => {
