@@ -2,20 +2,31 @@
   "name": "fut.js",
   "version": "1.0.0",
   "description": "Grab the data for any player in FIFA Ultimate Team.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Geekz45679/fut.js.git"
   },
-  "keywords": [ "fut", "fifa", "api" ],
+  "keywords": [
+    "fut",
+    "fifa",
+    "api",
+    "javascript"
+  ],
   "author": "Geekz45679",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Geekz45679/fut.js/issues"
   },
-  "homepage": "https://github.com/Geekz45679/fut.js#readme"
+  "homepage": "https://github.com/Geekz45679/fut.js#readme",
+  "dependencies": {
+    "node-fetch": "^2.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
 }
