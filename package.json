@@ -1,6 +1,6 @@
 {
   "name": "fut.js",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Grab the data for any player in FIFA Ultimate Team.",
   "main": "src/index.js",
   "scripts": {
