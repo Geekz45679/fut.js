@@ -1,8 +1,9 @@
 ![Build](https://travis-ci.org/Geekz45679/fut.js.svg?branch=master) ![Dependencies](https://david-dm.org/Geekz45679/fut.js.svg)
 # Fut.js
-### A Simple but powerful module to access the FIFA Ultimate Team player database.
+**A Simple but powerful module to access the FIFA Ultimate Team player database.**
+#### Install using: `npm install fut.js`
 
-#### [Full documentation of the array properties](docs/documentation.md)
+### ***[Full documentation](docs/documentation.md)***
 
 ### **getPlayer(name: string, clean: boolean)**:
 - **Name**: `String`, the name of the player you would like to search for.
