@@ -2,7 +2,7 @@
 # Fut.js
 ### A Simple but powerful module to access the FIFA Ultimate Team player database.
 
-#### [Full documentation of the array properties](FullDocs.md)
+#### [Full documentation of the array properties](docs/documentation.md)
 
 ### **getPlayer(name: string, clean: boolean)**:
 - **Name**: `String`, the name of the player you would like to search for.
