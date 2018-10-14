@@ -5,7 +5,7 @@ describe('getPlayer(\'Messi\', true)', () => {
   it('Should return a map with multiple keys of data for Messi, in an organised format', async () => {
     const messi = await getPlayer('Messi', true);
     if (!messi) return assert.fail('No data was returned.');
-    if (!messi.size > 1) return assert.fail('There was less than one set of data, expected more than one.');
+    if (!messi.length > 1) return assert.fail('There was less than one set of data, expected more than one.');
   });
 });
 
