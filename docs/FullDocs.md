@@ -7,6 +7,7 @@
 ### Contents of clean data:
 
 #### Info, the information of the player, **(Reference an item using: `<player>.info.<itemname>`)**:
+
 | Item:        | Type:  | Description:                                           |
 |--------------|--------|--------------------------------------------------------|
 | name         | String | The name of the player.                                |
@@ -25,6 +26,7 @@
 | baseId       | Number | The ID of the base card in the FUT database.           |
 
 #### Stats, the skill statistics of the player, **(Reference an item using: `<player>.skills.<itemname>`)**:
+
 | Item:            | Type:                        | Description:                                                                                                      |
 |------------------|------------------------------|-------------------------------------------------------------------------------------------------------------------|
 | overall          | Number                       | The player's overall rating.                                                                                      |
