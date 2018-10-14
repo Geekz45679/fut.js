@@ -11,7 +11,7 @@ const cleanData = require('./cleanData.js');
  */
 module.exports = async (name, clean = true) => {
   try {
-    if (!name) throw new Error('Error: Name parameter is invalid.');
+    if (!name) return console.error(new Error(error));
     const request = await fetch(endpoint.replace('{}', name));
     const data = await request.json();
     if (clean) {
@@ -20,6 +20,6 @@ module.exports = async (name, clean = true) => {
       return (data.count === 0) ? null : data;
     }
   } catch (error) {
-    throw new Error(error);
+    return console.error(new Error(error));
   }
 };

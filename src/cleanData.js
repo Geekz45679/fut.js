@@ -92,6 +92,6 @@ module.exports = async (data) => {
 		});
 		return playerData || null;
 	} catch (error) {
-		throw new Error(error);
+		return console.error(new Error(error));
 	}
 };
