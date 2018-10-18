@@ -5,9 +5,9 @@
 
 ### ***[Full documentation](docs/documentation.md)***
 
-### **getPlayer(name: string, clean: boolean)**:
+### **getPlayer(name: `string`, clean: `boolean`)**: Returns: `Array[Object]`
 - **Name**: `String`, the name of the player you would like to search for.
-- **Clean**: `Boolean` (optional, defaults to `true`), if `true` the function returns an array with some of the useless stuff striped away into a neater format, if `false` the function just returns the raw JSON data.
+- **Clean**: `Boolean`, (optional, defaults to `true`), if `true` the function returns an array with some of the useless stuff striped away into a neater format, if `false` the function just returns the raw JSON data.
 
 ### **Example:**
 ```js
@@ -25,4 +25,19 @@ fut.getPlayer('Messi', true).then((players) => {
 }).catch((err) => {
   return console.error(err);
 });
+```
+
+### **getPrice(id: `string`)**: Returns: `Object`
+- **Id:** `String`, has to be a numerical string (ie: `'69420'`), the id of a player which can be grabbed via the `getPlayer()` function, *see the example below*.
+
+## Example:
+```js
+const fut = require('fut.js');
+
+const somefunction = async () => {
+  const player = await fut.getPlayer('Messi', true);
+  const price = await fut.getPrice(player[0].info.id);
+
+  console.log(`Price for ${player.info.name} on xbox is: ${price.xbox}`);
+};
 ```
