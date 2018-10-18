@@ -11,11 +11,11 @@ const cleanData = require('./cleanData.js');
  */
 module.exports = async (name, clean = true) => {
   try {
-    if (!name) return console.error(new Error(error));
+    if (!name) return console.error(new Error('The name parameter is not valid!'));
     const request = await fetch(endpoint.replace('{}', name));
     const data = await request.json();
     if (clean) {
-      return cleanData(data);
+      return (data.count > 0) ? cleanData(data) : null;
     } else if (!clean) {
       return (data.count === 0) ? null : data;
     }
