@@ -1,5 +1,6 @@
 ![Build](https://travis-ci.org/Geekz45679/fut.js.svg?branch=master) ![Dependencies](https://david-dm.org/Geekz45679/fut.js.svg)
 # Fut.js
+## **New:** Added getPrice() function, see docs.
 **A Simple but powerful module to access the FIFA Ultimate Team player database.**
 #### Install using: `npm install fut.js`
 
