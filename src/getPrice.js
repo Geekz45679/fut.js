@@ -18,9 +18,18 @@ module.exports = async (id) => {
     const coins = (!Object.entries(data)[0][1].priceLimits) ? null : Object.entries(data)[0][1].priceLimits;
 
     return {
-      pc: coins.pc,
-      ps: coins.ps4,
-      xbox: coins.xboxone
+      pc: {
+        min: coins.pc.minPrice,
+        max: coins.pc.maxPrice
+      },
+      ps: {
+        min: coins.ps4.minPrice,
+        max: coins.ps4.maxPrice
+      },
+      xbox: {
+        min: coins.ps4.minPrice,
+        max: coins.ps4.maxPrice
+      }
     };
   } catch (error) {
     return console.error(new Error(error));
