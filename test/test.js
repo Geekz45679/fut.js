@@ -24,19 +24,19 @@ describe('getPlayer(\'thisisnotaplayer\', true)', () => {
   });
 });
 
-describe('getPrice(\'Messi\')', () => {
+describe('getPrice(\'158023\')', () => {
 	it('Should return a price above 150 for Xbox.', async () => {
 		const price = await getPrice('158023');
-		if (!price || !price > 150) return assert.fail(`The test returned ${price.xbox} and was meant to return a value above 150.`);
+		if (!price.xbox || !price.xbox > 150) return assert.fail(`The test returned ${price.xbox} and was meant to return a value above 150.`);
 	});
 
 	it('Should return a price above 150 for PS4.', async () => {
 		const price = await getPrice('158023');
-		if (!price || !price > 150) return assert.fail(`The test returned ${price.ps} and was meant to return a value above 150.`);
+		if (!price.ps || !price.ps > 150) return assert.fail(`The test returned ${price.ps} and was meant to return a value above 150.`);
 	});
 
 	it('Should return a price above 150 for PC.', async () => {
-		const price = await getPrice('158023');
-		if (!price || !price > 150) return assert.fail(`The test returned ${price.pc} and was meant to return a value above 150.`);
+    const price = await getPrice('158023');
+		if (!price.pc || !price.pc > 150) return assert.fail(`The test returned ${price.pc} and was meant to return a value above 150.`);
 	});
 });
