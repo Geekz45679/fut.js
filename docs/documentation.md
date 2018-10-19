@@ -17,11 +17,11 @@ const somefunction = async () => {
 ```
 
 ### Contents of data:
-| Item: | Type:  | Description:       |
-|-------|--------|--------------------|
-| pc    | `Number` | The price on PC.   |
-| xbox  | `Number` | The price on Xbox. |
-| ps    | `Number` | The price on PS.   |
+| Item: | Type:                                                                          | Description:       |
+|-------|--------------------------------------------------------------------------------|--------------------|
+| pc    | `Object(minPrice: number, maxPrice: number)`, Reference using `pc.minPrice`.   | The price on PC.   |
+| xbox  | `Object(minPrice: number, maxPrice: number)`, Reference using `xbox.minPrice`. | The price on Xbox. |
+| ps    | `Object(minPrice: number, maxPrice: number)`, Reference using `ps.minPrice`.   | The price on PS.   |
 
 ### **getPlayer(name: `string`, clean: `boolean`)**: Returns: `Array[Object]`
 - **Name**: `String`, the name of the player you would like to search for.
