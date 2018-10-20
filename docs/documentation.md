@@ -25,6 +25,7 @@ const somefunction = async () => {
 | pc    | `Object(min: number, max: number)`, Reference using `pc.min`.   | The price on PC.   |
 | xbox  | `Object(min: number, max: number)`, Reference using `xbox.min`. | The price on Xbox. |
 | ps    | `Object(min: number, max: number)`, Reference using `ps.min`.   | The price on PS.   |
+
 ---
 ### **getPlayer(name: `string`, clean: `boolean`)**: Returns: `Array[Object]`
 - **Name**: `String`, the name of the player you would like to search for.
