@@ -19,6 +19,7 @@ const somefunction = async () => {
 ```
 
 ### **Contents of data:**
+
 | Item: | Type:                                                           | Description:       |
 |-------|-----------------------------------------------------------------|--------------------|
 | pc    | `Object(min: number, max: number)`, Reference using `pc.min`.   | The price on PC.   |
