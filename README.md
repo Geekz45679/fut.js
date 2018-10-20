@@ -39,6 +39,6 @@ const somefunction = async () => {
   const player = await fut.getPlayer('Messi', true);
   const price = await fut.getPrice(player[0].info.id);
 
-  console.log(`Price for ${player.info.name} on xbox is: ${price.xbox}`);
+  console.log(`Price for ${player.info.name} on xbox is around: ${price.xbox.min}`);
 };
 ```

@@ -12,16 +12,16 @@ const somefunction = async () => {
   const player = await fut.getPlayer('Messi', true);
   const price = await fut.getPrice(player[0].info.id);
 
-  console.log(`Price for ${player.info.name} on xbox is: ${price.xbox}`);
+  console.log(`Price for ${player.info.name} on xbox is around: ${price.xbox.min}`);
 };
 ```
 
 ### Contents of data:
-| Item: | Type:                                                                          | Description:       |
-|-------|--------------------------------------------------------------------------------|--------------------|
-| pc    | `Object(minPrice: number, maxPrice: number)`, Reference using `pc.minPrice`.   | The price on PC.   |
-| xbox  | `Object(minPrice: number, maxPrice: number)`, Reference using `xbox.minPrice`. | The price on Xbox. |
-| ps    | `Object(minPrice: number, maxPrice: number)`, Reference using `ps.minPrice`.   | The price on PS.   |
+| Item: | Type:                                                           | Description:       |
+|-------|-----------------------------------------------------------------|--------------------|
+| pc    | `Object(min: number, max: number)`, Reference using `pc.min`.   | The price on PC.   |
+| xbox  | `Object(min: number, max: number)`, Reference using `xbox.min`. | The price on Xbox. |
+| ps    | `Object(min: number, max: number)`, Reference using `ps.min`.   | The price on PS.   |
 
 ### **getPlayer(name: `string`, clean: `boolean`)**: Returns: `Array[Object]`
 - **Name**: `String`, the name of the player you would like to search for.
