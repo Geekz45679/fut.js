@@ -1,10 +1,12 @@
-![Build](https://travis-ci.org/Geekz45679/fut.js.svg?branch=master) ![Dependencies](https://david-dm.org/Geekz45679/fut.js.svg)
+![Build](https://travis-ci.org/Geekz45679/fut.js.svg?branch=master) ![Dependencies](https://david-dm.org/Geekz45679/fut.js.svg) [![npm version](https://badge.fury.io/js/fut.js.svg)](https://badge.fury.io/js/fut.js)
 # Fut.js
+[![npm](https://nodei.co/npm/fut.js.png)](https://nodei.co/npm/fut.js/)
 
+---
 ### **getPrice(id: `string`)**: Returns: `Object`
 - **Id:** `String`, has to be a numerical string (ie: `'69420'`), the id of a player which can be grabbed via the `getPlayer()` function, *see the example below*.
 
-## Example:
+### **Example:**
 ```js
 const fut = require('fut.js');
 
@@ -16,18 +18,18 @@ const somefunction = async () => {
 };
 ```
 
-### Contents of data:
+### **Contents of data:**
 | Item: | Type:                                                           | Description:       |
 |-------|-----------------------------------------------------------------|--------------------|
 | pc    | `Object(min: number, max: number)`, Reference using `pc.min`.   | The price on PC.   |
 | xbox  | `Object(min: number, max: number)`, Reference using `xbox.min`. | The price on Xbox. |
 | ps    | `Object(min: number, max: number)`, Reference using `ps.min`.   | The price on PS.   |
-
+---
 ### **getPlayer(name: `string`, clean: `boolean`)**: Returns: `Array[Object]`
 - **Name**: `String`, the name of the player you would like to search for.
 - **Clean**: `Boolean`, (optional, defaults to `true`), if `true` the function returns an array with some of the useless stuff striped away into a neater format, if `false` the function just returns the raw JSON data.
 
-### Example:
+### **Example:**
 ```js
 const fut = require('fut.js');
 
@@ -45,7 +47,7 @@ fut.getPlayer('Messi', true).then((players) => {
 });
 ```
 
-### Contents of clean data:
+### **Contents of clean data:**
 Info, the information of the player, **(Reference an item using: `<player>.info.<itemname>`)**:
 
 | Item:        | Type:  | Description:                                           |
