@@ -1,5 +1,5 @@
 const fetch = require('node-fetch');
-const endpoint = 'https://www.easports.com/fifa/ultimate-team/api/fut/item?jsonParamObject={"name":"{}"}';
+const endpoint = 'https://www.easports.com/fifa/ultimate-team/api/fut/item?jsonParamObject={\"name\":\"{}\"}';
 
 module.exports = async (data) => {
 	try {
